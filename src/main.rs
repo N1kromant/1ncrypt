@@ -15,8 +15,6 @@ fn main() {
         .expect("Не удалось прочитать строку");
     let input = input.trim();
 
-    // println!("input is: \"{}\"", input);
-
     let filedataBin: String = filedata.as_bytes().iter()
         .map(|byte| byte.to_string())
         .collect::<Vec<String>>()
@@ -35,12 +33,6 @@ fn main() {
     .map(|byte| byte.to_string())
     .collect::<Vec<String>>()
     .join(" ");
-
-    
-    // let total: String = enc.as_bytes().iter()
-    //     .map(|byte| byte.to_string())
-    //     .collect::<Vec<String>>()
-    //     .join(" ");
 
     println!("encoded:{}", encryptedBin);
 

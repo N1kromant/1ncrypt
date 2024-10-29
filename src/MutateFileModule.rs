@@ -15,11 +15,6 @@ pub fn readFile(filename: &str) -> io::Result<String> {
     let mut content = String::new();
     file.read_to_string(&mut content);
 
-     
-    // while content.len() % 4 != 0 {
-    //     content.push(' ');
-    // }
-
     return Ok(content);
 }
 
